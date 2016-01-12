@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>métodos de seleção, encapsulamento, encadeamento e interação da Biblioteca jQuery</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		/*
+		$('h1').css("color", "#f66");     //Foi selecionado o h1 e passado uma cor laranja
+		$('h1').hide();                   //hide força a inicialização do título em oculto
+		$('h1').delay('1000');            //Depois de um segundo aparece o título
+		$('h1').fadeIn("slow");           //O título aparece de forma suave
+		$('h1').text("Click me");         //O valor do h1 definido no body é substituido.
+		*/
+
+		/*
+		$('h1').css("color", "#f66").hide().delay('1000').fadeIn("slow").text("Curso jQuery Ponto Canal");
+		*/
+
+		
+		$('h1').css("color", "#f66")
+			.hide()
+			.delay('1000')
+			.fadeIn("slow")
+			.text("click me")
+			.click(function(){
+				$('body').css("background", "#c30")
+				$('h1').css("color", "#fff");
+			});
+		
+		// $('a').css("display", "block");   - Sintaxe para um único elemento
+
+		$('a').css({color: 'black', display: 'block'}); //Sintaxe para mais de um elemento
+		$('.link2').css("color", "green");
+		$('#link3').css("color", "yellow");
+		// $('*').css("margin", "0");
+		$('*').css("padding", "10px");
+		$('h1, #link3').css("border-bottom", "solid 3px blue");
+	
+	});
+
+	</script>
+</head>
+<body>
+	<h1>Ponto Canal inscreva-se</h1>
+	<a href="#">Link 1</a>
+	<a href="#" class="link2">Link 2</a>
+	<a href="#" id="link3">Link 3</a>
+</body>
+</html>
