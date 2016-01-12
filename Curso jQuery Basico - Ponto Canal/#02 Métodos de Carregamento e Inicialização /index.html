@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicialização do jQuery</title>
+	<meta charset="UTF-8">
+	<!--Usando Cdn-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+
+	//Inicialização do jQuery
+	
+	//Primeira forma: executado assim que o elemento DOM for carregado.	
+	$(document).ready(function() {
+		alert('DOM carregado!!!\n\nClique em Ok e role o scroll para ver a imagem completa!');
+	});
+
+	//ou
+
+	// $(function(){
+	// 	alert('DOM carregado!!!\n\nClique em Ok e role o scroll para ver a imagem completa!');
+	// });
+
+
+	//Segunda forma: executado depois que todos os elementos da página forem carregados.
+	$(window).load(function(){
+		alert('Elementos carregados!!!');
+	});
+
+	</script>
+</head>
+<body>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Sancho_Bay_-_Fernando_de_Noronha,_Pernambuco,_Brazil.jpg">
+</body>
+</html>
