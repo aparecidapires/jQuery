@@ -11,7 +11,7 @@ body {
 	color: #fff;
 }
 
-p, input {
+p, input, textarea {
 	width: 480px;
 	padding: 5px;
 	background: #000;
@@ -20,6 +20,8 @@ p, input {
 	text-align: center;
 	color: #fff;
 	border: 5px solid #ccc;
-	margin-top: 25px;
+	margin-top: 15px;
 }
+
+
 

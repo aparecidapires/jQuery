@@ -19,7 +19,7 @@ $(function () {
 
 	$('.ev3').focusin(function() {
 		$(this).css("background", "#ccc");
-		ex.text("Você deu foco!");
+		ex.text("Você deu foco! Clique fora para retirar o foco!");
 	}).focusout(function(){
 		$(this).css("background", "#000");
 		ex.text("Você tirou o foco!");
@@ -61,4 +61,10 @@ $(function () {
 
 		ex.text("Movimento x: " + localx + " - Movimento y: " + localy);
 	});
+
+
+	$('.key').keypress(function() {
+		ex.text($(this).val());	
 	});
+
+});
