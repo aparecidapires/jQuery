@@ -76,5 +76,4 @@ $(function () {
 	$('.key').keyup(function() {
 		ex.text($(this).val());	
 	});
-	
 });
