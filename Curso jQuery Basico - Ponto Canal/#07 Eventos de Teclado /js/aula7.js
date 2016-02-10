@@ -20,10 +20,4 @@ $(function () {
 
 	});
 
-	var ex = $('.mensagem');
-
-	$('.key').keypress(function() {
-		ex.text($(this).val());	
-	});
-
 });
